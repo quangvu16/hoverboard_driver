@@ -27,4 +27,4 @@ Step 2: cd hoverboard-driver
 Step 3: git submodule update --init --recursive
 
 
-B. Port Config: hoverboard_driver/include/hoverboard_driver/config.h
+C. Port Config: hoverboard_driver/include/hoverboard_driver/config.h
