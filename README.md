@@ -11,20 +11,20 @@ How to make firmware: https://youtu.be/Q01NtnQYkZM by Visuak Studio Code + Platf
 
 Step 1: git clone git@github.com:bipropellant/bipropellant-hoverboard-firmware.git
 
-Step 2: cd bipropellant-hoverboard-firmware/config.h
+Step 2: cd bipropellant-hoverboard-firmware/
 
 Step 3: git checkout 5d296378f30891fdbd40b45df61b52666f4f4cdc .
 
 Step 4: git submodule update --init --recursive
 
 
-B. Port Config: hoverboard_driver/include/hoverboard_driver/
-
-
-C. ROS package:
+B. ROS package:
 
 Step 1: git clone git@github.com:quangvu16/hoverboard_driver.git
 
 Step 2: cd hoverboard-driver
 
 Step 3: git submodule update --init --recursive
+
+
+B. Port Config: hoverboard_driver/include/hoverboard_driver/config.h
