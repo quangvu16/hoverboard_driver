@@ -11,7 +11,7 @@ How to make firmware: https://youtu.be/Q01NtnQYkZM by Visuak Studio Code + Platf
 
 Step 1: git clone git@github.com:bipropellant/bipropellant-hoverboard-firmware.git
 
-Step 2: cd bipropellant-hoverboard-firmware/
+Step 2: cd bipropellant-hoverboard-firmware/config.h
 
 Step 3: git checkout 5d296378f30891fdbd40b45df61b52666f4f4cdc .
 
