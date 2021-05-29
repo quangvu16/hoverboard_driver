@@ -15,7 +15,7 @@ https://github.com/bipropellant/bipropellant-hoverboard-firmware
 (*) Firmware file of hoverboard_driver ROS
 https://github.com/quangvu16/hoverboard_driver/blob/master/Hoverboard_firmware_UART2.bin
 
-How to make firmware: https://youtu.be/Q01NtnQYkZM by Visuak Studio Code + PlatformIO
+How to make firmware: https://youtu.be/Q01NtnQYkZM by Visual Studio Code + PlatformIO
 
 Step 1: git clone git@github.com:bipropellant/bipropellant-hoverboard-firmware.git
 
