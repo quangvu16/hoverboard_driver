@@ -5,6 +5,11 @@ This driver is built for [Robaka](https://github.com/alex-makarov/robaka-ros), a
 
 
 A. Firmware for hoverboard-driver:
+(*) Read firstly to know how to make hoverboard motherboard for ROS
+https://github.com/NiklasFauth/hoverboard-firmware-hack
+https://github.com/bipropellant/bipropellant-hoverboard-firmware
+
+(*) Firmware file of hoverboard_driver ROS
 https://github.com/quangvu16/hoverboard_driver/blob/master/Hoverboard_firmware_UART2.bin
 
 How to make firmware: https://youtu.be/Q01NtnQYkZM by Visuak Studio Code + PlatformIO
