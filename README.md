@@ -6,6 +6,7 @@ This driver is built for [Robaka](https://github.com/alex-makarov/robaka-ros), a
 
 A. Firmware for hoverboard-driver:
 https://github.com/quangvu16/hoverboard_driver/blob/master/Hoverboard_firmware_UART2.bin
+
 How to make firmware: https://youtu.be/Q01NtnQYkZM
 
 B. Port Config: hoverboard_driver/include/hoverboard_driver/
