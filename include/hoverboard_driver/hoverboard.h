@@ -7,23 +7,20 @@
 #include <std_msgs/Float64.h>
 #include <dynamic_reconfigure/server.h>
 #include "hoverboard_driver/HoverboardConfig.h"
+#include <geometry_msgs/Vector3Stamped.h>
 
 class HoverboardAPI;
 
 class Hoverboard : public hardware_interface::RobotHW {
 public:
-    static Hoverboard& getInstance();
+    Hoverboard();
     ~Hoverboard();
-    
+
     void read();
     void write();
     void tick();
 
-    void hallCallback();
-    void electricalCallback();
- private:
-    Hoverboard();
- 
+private:
     hardware_interface::JointStateInterface joint_state_interface;
     hardware_interface::VelocityJointInterface velocity_joint_interface;
 
@@ -31,13 +28,16 @@ public:
     struct Joint {
         std_msgs::Float64 pos;
         std_msgs::Float64 vel;
-        std_msgs::Float64 eff;
+        std_msgs::Float64 speed;
         std_msgs::Float64 cmd;
     } joints[2];
 
+    geometry_msgs::Vector3Stamped speed_msg;                                //create a "speed_msg" ROS message
     double wheel_radius;
     ros::Time last_read;
     HoverboardAPI *api;
+    double sens_speed0;
+    double sens_speed1;
 
     // For debug purposes only
     ros::NodeHandle nh;
@@ -47,7 +47,7 @@ public:
     ros::Publisher left_cmd_pub, right_cmd_pub;
     ros::Publisher left_cur_pub, right_cur_pub;
     ros::Publisher voltage_pub;
-
+    
     // Supporting dynamic reconfigure for PID control
     dynamic_reconfigure::Server<hoverboard_driver::HoverboardConfig> *dsrv;
     void reconfigure_callback(hoverboard_driver::HoverboardConfig& config, uint32_t level);
