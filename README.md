@@ -9,6 +9,9 @@ https://github.com/quangvu16/hoverboard_driver/blob/master/Hoverboard_firmware_U
 B. Port Config: hoverboard_driver/include/hoverboard_driver/
 
 C. ROS package:
+
 Step 1: git clone git@github.com:quangvu16/hoverboard_driver.git
+
 Step 2: cd hoverboard-driver
+
 Step 3: git submodule update --init --recursive
